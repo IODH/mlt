@@ -756,8 +756,8 @@ function replaceTo(str) {
 		.replaceAll(/о[бпвмф]/gu, (m) => 'ѡ' + m[1])
 		.replaceAll(/є[бпвмф]/gu, (m) => 'ꙓ' + m[1])
 		.replaceAll(/е[бпвмф]/gu, (m) => 'ѣ' + m[1])
-		.replaceAll(/ё[бпвмф]/gu, (m) => 'ѣ̈' + m[2])
-		.replaceAll(/і[бпвмф]/gu, (m) => 'ɨ' + m[2])
+		.replaceAll(/ё[бпвмф]/gu, (m) => 'ѣ̈' + m[1])
+		.replaceAll(/і[бпвмф]/gu, (m) => 'ɨ' + m[1])
 
 		.replaceAll(/и[бпвмф]/gu, (m) => 'ꙑ' + m[1])
 
