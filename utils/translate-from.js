@@ -295,9 +295,6 @@ function replaceFrom(str) {
 		.replaceAll('Ҹ', 'Чж')
 		.replaceAll('ҹ', 'чж')
 
-		.replaceAll('Ії', 'Ɨ')
-		.replaceAll('ії', 'ɨ')
-
 		.replaceAll(/[Ћ]/gu, 'Ч')
 		.replaceAll(/[ћ]/gu, 'ч')
 
@@ -373,8 +370,8 @@ function replaceFrom(str) {
 		.replaceAll(/(Ꙓ|Ꙝ|Ъ̈)/gu, 'Є')
 		.replaceAll(/(ꙓ|ꙝ|ъ̈)/gu, 'є')
 
-		.replaceAll(/[ꙚѶ]/gu, 'І')
-		.replaceAll(/[ꙛѷ]/gu, 'і')
+		.replaceAll(/[ꙚѶƗ]/gu, 'І')
+		.replaceAll(/[ꙛѷɨ]/gu, 'і')
 
 		.replaceAll(/[ЫꙐѴꙞ]/gu, 'И')
 		.replaceAll(/[ыꙑѵꙟ]/gu, 'и')
