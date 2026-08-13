@@ -227,8 +227,11 @@ function replaceTo(str) {
 		.replaceAll('Ер', 'Ър')
 		.replaceAll('ер', 'ър')
 
-		.replaceAll('Єєв', 'Ӭ̄в')
-		.replaceAll('єєв', 'ӭ̄в')
+		.replaceAll(/Очҍі[ ,-:;]/gu, (m) => 'Ꙭ' + m[1] + m[2] + m[3] + m[4])
+		.replaceAll(/очҍі[ ,-:;]/gu, (m) => 'ꙭ' + m[1] + m[2] + m[3] + m[4])
+
+		.replaceAll('Тч', 'Ꚓ')
+		.replaceAll('тч', 'ꚓ')
 
 		.replaceAll('Чҍі', 'Ћҍі')
 		.replaceAll('чҍі', 'ћҍі')
@@ -275,9 +278,6 @@ function replaceTo(str) {
 		.replaceAll('Зм', 'Ꙁ')
 		.replaceAll('зм', 'ꙁ')
 
-		.replaceAll('Тч', 'Ꚓ')
-		.replaceAll('тч', 'ꚓ')
-
 		.replaceAll('Ир', 'Ѵр')
 		.replaceAll('ир', 'ѵр')
 
@@ -304,9 +304,6 @@ function replaceTo(str) {
 
 		.replaceAll('Очо', 'Ꚙч')
 		.replaceAll('очо', 'ꚙч')
-
-		.replaceAll(/Очҍі[ ,-:;]/gu, (m) => 'Ꙭ' + m[1] + m[2] + m[3] + m[4])
-		.replaceAll(/очҍі[ ,-:;]/gu, (m) => 'ꙭ' + m[1] + m[2] + m[3] + m[4])
 
 		.replaceAll('Оі', 'Ꙕ')
 		.replaceAll('оі', 'ꙕ')
@@ -361,15 +358,6 @@ function replaceTo(str) {
 
 		.replaceAll('Оєв', 'Ө̆')
 		.replaceAll('оєв', 'ө̆')
-
-		.replaceAll('Елв', 'Э̆л')
-		.replaceAll('елв', 'э̆л')
-
-		.replaceAll('Ел', 'Эл')
-		.replaceAll('ел', 'эл')
-
-		.replaceAll('Ейл', 'Ӭл')
-		.replaceAll('ейл', 'ӭл')
 
 		.replaceAll('Ей', 'Ё')
 		.replaceAll('ей', 'ё')
@@ -629,6 +617,22 @@ function replaceTo(str) {
 
 		.replaceAll('Хн', '')
 		.replaceAll('хн', '')
+
+		.replaceAll(/Е[члжчшщ]/gu, (m) => 'Э' + m[1])
+		.replaceAll(/е[члжчшщ]/gu, (m) => 'э' + m[1])
+		.replaceAll(/[ЧчЛлЖжЧчШшЩщ]е/gu, (m) => m[0] + 'э')
+
+		.replaceAll(/Ё[члжчшщ]/gu, (m) => 'Ӭ' + m[1])
+		.replaceAll(/ё[члжчшщ]/gu, (m) => 'ӭ' + m[1])
+		.replaceAll(/[ЧчЛлЖжЧчШшЩщ]ё/gu, (m) => m[0] + 'ӭ')
+
+		.replaceAll(/Ё̄[члжчшщ]/gu, (m) => 'Ӭ̄' + m[1])
+		.replaceAll(/ё̄[члжчшщ]/gu, (m) => 'ӭ̄' + m[1])
+		.replaceAll(/[ЧчЛлЖжЧчШшЩщ]ё̄/gu, (m) => m[0] + 'ӭ̄')
+
+		.replaceAll(/Є[члжчшщ]/gu, (m) => 'Э̆' + m[1])
+		.replaceAll(/є[члжчшщ]/gu, (m) => 'э̆' + m[1])
+		.replaceAll(/[ЧчЛлЖжЧчШшЩщ][ьҍ]є/gu, (m) => m[0] + m[1] + 'э̆')
 
 		.replaceAll(/И[чл]/gu, (m) => 'Ы' + m[1])
 		.replaceAll(/и[чл]/gu, (m) => 'ы' + m[1])
