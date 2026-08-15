@@ -223,8 +223,8 @@ function replaceFrom(str) {
 		.replaceAll('Ꙧ', 'Мг')
 		.replaceAll('ꙧ', 'мг')
 
-		.replaceAll('Ҥ̂', 'Нґ')
-		.replaceAll('ҥ̂', 'нґ')
+		.replaceAll('', 'Нґ')
+		.replaceAll('', 'нґ')
 
 		.replaceAll('Ꚇ', 'Чч')
 		.replaceAll('ꚇ', 'чч')

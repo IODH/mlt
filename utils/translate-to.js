@@ -176,8 +176,8 @@ function replaceTo(str) {
 		.replaceAll('Лр', '')
 		.replaceAll('лр', '')
 
-		.replaceAll('Нґ', 'Ҥ̂')
-		.replaceAll('нґ', 'ҥ̂')
+		.replaceAll('Нґ', '')
+		.replaceAll('нґ', '')
 
 		.replaceAll('Іа', 'Ꙗ')
 		.replaceAll('іа', 'ꙗ')
