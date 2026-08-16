@@ -235,6 +235,9 @@ function replaceTo(str) {
 		.replaceAll(/Очҍі[ ,-:;]/gu, (m) => 'Ꙭ' + m[1] + m[2] + m[3] + m[4])
 		.replaceAll(/очҍі[ ,-:;]/gu, (m) => 'ꙭ' + m[1] + m[2] + m[3] + m[4])
 
+		.replaceAll('Очҍі', 'Ꙭчҍі')
+		.replaceAll('очҍі', 'ꙭчҍі')
+
 		.replaceAll('Тч', 'Ꚓ')
 		.replaceAll('тч', 'ꚓ')
 
