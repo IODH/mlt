@@ -268,8 +268,8 @@ function replaceTo(str) {
 		.replaceAll('Ха', 'Һа')
 		.replaceAll('ха', 'һа')
 
-		.replaceAll('Хҍї', 'ҍї')
-		.replaceAll('хҍї', 'ҍї')
+		.replaceAll('Хҍі', 'ҍі')
+		.replaceAll('хҍі', 'ҍі')
 
 		.replaceAll('Дч', 'Ԭ')
 		.replaceAll('дч', 'ԭ')
